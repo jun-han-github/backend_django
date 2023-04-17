@@ -2,5 +2,6 @@
 exclude =
     migrations,
     __pycache__,
-    manage.py,
-    settings.py
+    app/settings.py,
+    manage.py
+max-line-length = 100
