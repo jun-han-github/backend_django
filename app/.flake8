@@ -1,7 +1,7 @@
+
 [flake8]
 exclude =
     migrations,
     __pycache__,
-    app/settings.py,
-    manage.py
-max-line-length = 100
+    manage.py,
+    settings.py
