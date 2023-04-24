@@ -6,6 +6,7 @@ from django.contrib.auth.models import (
 )
 
 class UserManager(BaseUserManager):
+
     """Manager for users"""
 
     def create_user(self, email, password=None, **extra_field):
@@ -21,7 +22,10 @@ class UserManager(BaseUserManager):
 AbstractBaseUser contains a functionality for auth system
 Permissions contains... permissions functionality
 """
+
+
 class User(AbstractBaseUser, PermissionsMixin):
+    
     """User in the system"""
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
