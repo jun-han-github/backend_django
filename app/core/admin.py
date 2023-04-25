@@ -52,4 +52,5 @@ class UserAdmin(BaseUserAdmin):
     )
 
 
-admin.site.register(models.User, UserAdmin)
+admin.site.register(models.User, UserAdmin)  # UserAdmin is a custom class
+admin.site.register(models.Recipe)           # Recipe is a default class
